@@ -40,7 +40,7 @@ const Navbar = ({ theme }) => {
 					</Link>
 				</div>
 				<div className="grid name">
-					<h1>Bermuda V3</h1>
+					<h1>Buccaneer V3</h1>
 				</div>
 			</div>
 			<div
