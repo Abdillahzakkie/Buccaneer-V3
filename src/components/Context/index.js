@@ -47,7 +47,7 @@ class Web3Provider extends Component {
 			const _chainId = await web3.eth.getChainId();
 			const _networkType = await web3.eth.net.getNetworkType();
 
-			if (parseInt(_chainId) !== 4) {
+			if (parseInt(_chainId) !== 1) {
 				this.setState({ loading: true });
 				alert(
 					`Amuse: Invalid network detected. Please switch from ${_networkType} to Mainnet`
