@@ -56,6 +56,7 @@ export const NavbarContainer = styled.div`
 				letter-spacing: var(--mainSpacing);
 				font-weight: 500;
 				font-size: 1.25em;
+				color: var(--white);
 			}
 		}
 	}

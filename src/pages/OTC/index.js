@@ -23,8 +23,6 @@ const OTC = () => {
 			</div>
 
 			<form className="grid private-send">
-				<header className="grid">Private Send</header>
-
 				<section className="grid field">
 					<div className="grid type">
 						<p>Amount:</p>

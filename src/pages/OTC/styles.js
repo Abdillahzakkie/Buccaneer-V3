@@ -44,7 +44,7 @@ export const OtcContainer = styled.div`
 	}
 
 	form {
-		height: 400px;
+		height: 300px;
 		background: linear-gradient(
 			253.59deg,
 			rgba(21, 32, 87, 0.75) 1.89%,
@@ -136,6 +136,7 @@ export const OtcContainer = styled.div`
 			height: 90px;
 			align-items: center;
 			border-bottom: 0.1em solid var(--white);
+			grid-gap: 1em;
 
 			.type {
 				width: 100%;
@@ -150,6 +151,7 @@ export const OtcContainer = styled.div`
 				width: 100%;
 				grid-template-columns: repeat(5, 1fr);
 				place-items: center;
+				grid-gap: 1em;
 			}
 
 			.claim {
@@ -168,6 +170,14 @@ export const OtcContainer = styled.div`
 
 		.border-none {
 			border-bottom: none;
+		}
+	}
+
+	@media (max-width: 1023px) {
+		& {
+			.chain-deployment {
+				width: 90vw;
+			}
 		}
 	}
 `;
