@@ -21,7 +21,6 @@ export const NavbarContainer = styled.div`
 	.nav-brand {
 		grid-column: 1/3;
 		grid-template-columns: 1fr 2fr;
-		/* width: 100%; */
 		height: 100%;
 		letter-spacing: var(--mainSpacing);
 		align-items: center;
@@ -107,6 +106,7 @@ export const NavbarContainer = styled.div`
 					font-size: 1.5rem;
 					cursor: pointer;
 					width: 100%;
+					background: red;
 				}
 
 				.nav-brand {

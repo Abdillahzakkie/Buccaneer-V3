@@ -1,13 +1,18 @@
 import styled from "styled-components";
 
 export const HomeContainer = styled.div`
-	width: 100vw;
+	width: 90vw;
 	color: var(--white);
 	place-items: center;
 
+	.banner-logo,
+	.featured-cards,
+	.sections {
+		width: 100%;
+	}
+
 	.banner {
 		grid-template-columns: repeat(2, 1fr);
-		width: 90%;
 		height: 100%;
 		background: linear-gradient(
 			253.59deg,
@@ -75,8 +80,7 @@ export const HomeContainer = styled.div`
 	}
 
 	.featured-cards {
-		grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-		width: 90%;
+		grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 		grid-gap: 2em;
 		place-content: center;
 		align-items: center;
@@ -111,7 +115,6 @@ export const HomeContainer = styled.div`
 
 	.sections {
 		grid-template-columns: repeat(2, 1fr);
-		width: 90%;
 		place-items: center;
 		padding: 2em;
 
@@ -125,11 +128,18 @@ export const HomeContainer = styled.div`
 
 		.image {
 			width: 100%;
-			place-items: end;
+			/* place-items: end; */
+			place-items: center;
+
+			img {
+				width: 300px;
+				height: 300px;
+			}
 		}
 
 		.right {
-			place-items: start;
+			/* place-items: start; */
+			place-items: center;
 		}
 	}
 
@@ -142,11 +152,22 @@ export const HomeContainer = styled.div`
 
 				.banner-logo {
 					grid-row: 1;
+
+					.image {
+						img {
+							width: 200px;
+							height: 200px;
+						}
+					}
 				}
 
 				.banner-text {
 					grid-row: 2;
 				}
+			}
+
+			.featured-cards {
+				padding: 2em 1em;
 			}
 
 			.sections {
@@ -160,6 +181,20 @@ export const HomeContainer = styled.div`
 
 				.image {
 					grid-row: 1;
+
+					img {
+						width: 200px;
+						height: 200px;
+					}
+				}
+			}
+		}
+
+		@media (max-width: 325px) {
+			& {
+				.featured-cards {
+					grid-template-columns: 1fr;
+					padding: 2em 0;
 				}
 			}
 		}
