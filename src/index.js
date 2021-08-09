@@ -2,10 +2,16 @@ import React from "react";
 import ReactDOM from "react-dom";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
+import { BrowserRouter as Router } from "react-router-dom";
+import { Web3Provider } from "./components/Context";
 
 ReactDOM.render(
 	<React.StrictMode>
-		<App />
+		<Router>
+			<Web3Provider>
+				<App />
+			</Web3Provider>
+		</Router>
 	</React.StrictMode>,
 	document.getElementById("root")
 );
