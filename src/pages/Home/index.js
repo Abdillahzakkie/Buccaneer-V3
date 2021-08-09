@@ -1,4 +1,5 @@
 import React from "react";
+import { ErrorBoundary } from "../../components/ErrorBoundary";
 import bermudaLogo from "../../assets/bermuda.png";
 import { HomeContainer } from "./styles";
 import cardImg1 from "../../assets/Home/featured-card-1.png";
@@ -115,4 +116,4 @@ const Home = () => {
 	);
 };
 
-export default Home;
+export default ErrorBoundary(Home);

@@ -73,7 +73,14 @@ const Footer = () => {
 			<div className="grid copy-right">
 				<p>
 					copyright &copy; {getYear} all rights reserved | Designed & built with
-					💖 by DragonLord
+					💖 by
+					<a
+						href="https://github.com/abdillahzakkie"
+						target="_blank"
+						rel="noreferrer"
+					>
+						DragonLord
+					</a>
 				</p>
 			</div>
 		</FooterContainer>

@@ -13,6 +13,10 @@ const Navbar = ({ theme }) => {
 	const { loading } = useContext(web3Context);
 
 	const pages = ["Home", "Bermuda", "OTC", "Governance"];
+	const activeStyle = {
+		borderBottom: "1px solid var(--white)",
+		padding: ".75em",
+	};
 
 	const Navlist = pages.map((item, i) => {
 		return (
@@ -20,6 +24,7 @@ const Navbar = ({ theme }) => {
 				key={i}
 				exact
 				to={pages[i] === "Home" ? "/" : pages[i].toLowerCase()}
+				activeStyle={activeStyle}
 			>
 				{pages[i]}
 			</NavLink>

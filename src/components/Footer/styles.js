@@ -75,6 +75,7 @@ export const FooterContainer = styled.div`
 					top: 15px;
 					right: 33%;
 					outline: none;
+					background: transparent;
 
 					.icon {
 						font-size: 1.25em;
@@ -91,6 +92,16 @@ export const FooterContainer = styled.div`
 				padding: 1em 0;
 				font-size: 1.5em;
 			}
+		}
+	}
+
+	.copy-right {
+		place-items: center;
+		letter-spacing: var(--mainSpacing);
+		font-weight: normal;
+
+		a {
+			margin-left: 5px;
 		}
 	}
 
