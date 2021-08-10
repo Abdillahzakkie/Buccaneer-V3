@@ -149,18 +149,31 @@ export const BermudaContainer = styled.div`
 		}
 
 		p {
-			font-size: 1em;
+			font-size: 1.25em;
 		}
 	}
 
 	@media (max-width: 767px) {
 		& {
+			.balance {
+				.submarine-mode {
+					p {
+						font-size: 1em;
+					}
+				}
+			}
 			.form-group {
 				grid-template-columns: 1fr;
 			}
 
 			.random-text {
 				width: 80%;
+			}
+
+			.staking {
+				header {
+					font-size: 1em;
+				}
 			}
 		}
 
@@ -171,6 +184,24 @@ export const BermudaContainer = styled.div`
 
 					.btns {
 						grid-template-columns: 1fr;
+					}
+				}
+			}
+		}
+
+		@media (max-width: 374px) {
+			& {
+				header {
+					padding: 0;
+					font-size: 1.25em;
+				}
+
+				.balance {
+					padding: 2em 1em;
+
+					h1 {
+						font-size: 1.35em;
+						letter-spacing: var(--mainSpacing);
 					}
 				}
 			}
