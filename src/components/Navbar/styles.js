@@ -106,7 +106,6 @@ export const NavbarContainer = styled.div`
 					font-size: 1.5rem;
 					cursor: pointer;
 					width: 100%;
-					background: red;
 				}
 
 				.nav-brand {
